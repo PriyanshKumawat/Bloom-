@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="/css/sign-up.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="signin-container">
+            <div class="illustration-side">
+                <img src="/image/contact/contact.png" alt="Sign Up Illustration">
+            </div>
+
+            <div class="form-side">
+                <h2>Sign Up</h2>
+                <p class="subtitle">Create your account to get started.</p>
+
+                <form action="dashboard.html">
+                    <div class="input-group">
+                        <label><span class="required">*</span> Full Name</label>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label><span class="required">*</span> Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label><span class="required">*</span> Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" placeholder="Create a password" required>
+                            <span class="toggle-password">👁️</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label><span class="required">*</span> Confirm Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-signin"><a href="#">Sign Up</a></button>
+
+                    <button type="button" class="btn-create">
+                        <a href="#">Already have an account? Sign In</a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
