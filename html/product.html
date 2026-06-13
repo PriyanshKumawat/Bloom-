@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Producte-Page</title>
+    <meta name="description" content="Bloom — Shop fresh flowers, bouquets, cakes, plants and personalised gifts for every occasion.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Products — Bloom</title>
     <link rel="stylesheet" href="/css/product.css">
 </head>
 
@@ -17,7 +19,7 @@
         <!-- ----------------menu-1------------>
         <div class="nav-bar">
             <div class="nav-logo">
-                <div class="logo">Flower </div>
+                <div class="logo">Bloom 🌸</div>
             </div>
             <div class="nav-links">
                 <ul>
@@ -28,9 +30,12 @@
                 </ul>
             </div>
             <div class="icons">
-                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                <a href="#"><i class="fa-solid fa-user"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" id="wishlist-icon" aria-label="Wishlist"><i class="fa-solid fa-heart"></i></a>
+                <a href="sign-in.html" id="user-icon" aria-label="Account"><i class="fa-solid fa-user"></i></a>
+                <a href="cart.html" id="cart-icon" aria-label="Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count" id="cart-badge">0</span>
+                </a>
             </div>
         </div>
         <hr>
@@ -113,7 +118,21 @@
             </ul>
         </nav>
     </header>
-    <!-- -------------row-1----------- -->
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Our Flower Collection</h1>
+        <p>Handpicked blooms for every occasion — fresh, beautiful, delivered with love.</p>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+        <button class="filter-btn active" id="filter-all">All</button>
+        <button class="filter-btn" id="filter-roses">Roses</button>
+        <button class="filter-btn" id="filter-bouquets">Bouquets</button>
+        <button class="filter-btn" id="filter-exotic">Exotic</button>
+        <button class="filter-btn" id="filter-bridal">Bridal</button>
+    </div>
+
     <main>
         <div class="card-container">
 
@@ -435,8 +454,8 @@
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section about">
-                <h3>YourLogo</h3>
-                <p>Brief description of your company or website. Make it catchy and relevant.</p>
+                <h3>Bloom 🌸</h3>
+                <p>Bringing nature's beauty to your doorstep. Curated fresh flowers for every occasion since 2025.</p>
             </div>
 
             <div class="footer-section links">
@@ -451,13 +470,13 @@
 
             <div class="footer-section contact">
                 <h3>Contact Us</h3>
-                <p>Email: info@example.com</p>
-                <p>Phone: +1 123 456 7890</p>
+                <p>Email: hello@bloom.in</p>
+                <p>Phone: +91 98000 00000</p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+            <p>&copy; 2025 Bloom. All rights reserved.</p>
             <ul class="policy-links">
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Service</a></li>
@@ -466,6 +485,8 @@
         </div>
     </footer>
 
+    <script src="/js/bloom-cart.js"></script>
+    <script src="/js/product.js"></script>
 </body>
 
 </html>

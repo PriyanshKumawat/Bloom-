@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Flower Website</title>
+    <meta name="description" content="Bloom — Hand-picked fresh flowers for every special moment. Shop roses, orchids, sunflowers and more with same-day delivery.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Bloom — Fresh Flowers & Gifts</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <header>
-        <!-- ----------------menu-1------------>
+        <!-- ---- Top Navbar ---- -->
         <div class="nav-bar">
-
             <div class="nav-logo">
-                <div class="logo">Flower </div>
+                <div class="logo">Bloom <span>🌸</span></div>
             </div>
-
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -28,20 +28,19 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-
-
             <div class="icons">
-                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                <a href="#"><i class="fa-solid fa-user"></i></a>
-                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" id="wishlist-icon" aria-label="Wishlist"><i class="fa-solid fa-heart"></i></a>
+                <a href="sign-in.html" id="user-icon" aria-label="Account"><i class="fa-solid fa-user"></i></a>
+                <a href="cart.html" id="cart-icon" aria-label="Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count" id="cart-badge">0</span>
+                </a>
             </div>
         </div>
-        <hr>
-        <!-- ---------------Dropdrown-menu------>
-        <nav class="category-bar">
 
+        <!-- ---- Category Dropdown Bar ---- -->
+        <nav class="category-bar" aria-label="Category navigation">
             <ul class="cat-links">
-
                 <li class="cat-dropdown">
                     <a href="#">Valentine's <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="cat-menu">
@@ -50,7 +49,6 @@
                         <li><a href="#">Personalized Gifts</a></li>
                     </ul>
                 </li>
-
                 <li class="cat-dropdown">
                     <a href="#">Birthday <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="cat-menu">
@@ -59,222 +57,207 @@
                         <li><a href="#">Birthday Cakes</a></li>
                     </ul>
                 </li>
-
                 <li class="cat-dropdown">
                     <a href="#">Occasions <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="cat-menu">
-                        <li><a href="#">Weeding</a></li>
-                        <li><a href="#">For Parents</a></li>
-                        <li><a href="#">Birthday Cakes</a></li>
+                        <li><a href="#">Wedding</a></li>
+                        <li><a href="#">Retirement</a></li>
+                        <li><a href="#">Farewell</a></li>
                     </ul>
                 </li>
-
                 <li class="cat-dropdown">
                     <a href="#">Anniversary <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="cat-menu">
-                        <li><a href="#">For Kids</a></li>
-                        <li><a href="#">For Parents</a></li>
-                        <li><a href="#">Birthday Cakes</a></li>
+                        <li><a href="#">Candles</a></li>
+                        <li><a href="#">Gift Hampers</a></li>
+                        <li><a href="#">Anniversary Cakes</a></li>
                     </ul>
                 </li>
-
                 <li class="cat-dropdown">
-                    <a href="#">Flowers<i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#">Flowers <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="cat-menu">
-                        <li><a href="#">For Kids</a></li>
-                        <li><a href="#">For Parents</a></li>
-                        <li><a href="#">Birthday Cakes</a></li>
+                        <li><a href="#">For Valentine Day</a></li>
+                        <li><a href="#">For Occasions</a></li>
+                        <li><a href="#">For Retirement</a></li>
                     </ul>
                 </li>
-
                 <li class="cat-dropdown">
                     <a href="#">Cakes <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="cat-menu">
-                        <li><a href="#">For Kids</a></li>
-                        <li><a href="#">For Parents</a></li>
+                        <li><a href="#">Kids Birthday Design</a></li>
+                        <li><a href="#">Customised Cakes</a></li>
                         <li><a href="#">Birthday Cakes</a></li>
                     </ul>
                 </li>
-
                 <li class="cat-dropdown">
-                    <a href="#">Personalised<i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#">Personalised <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="cat-menu">
-                        <li><a href="#">For Kids</a></li>
-                        <li><a href="#">For Parents</a></li>
-                        <li><a href="#">Birthday Cakes</a></li>
+                        <li><a href="#">Home Decoration</a></li>
+                        <li><a href="#">3D Birthday Cake</a></li>
+                        <li><a href="#">Anime Cakes</a></li>
                     </ul>
                 </li>
-
                 <li class="cat-dropdown">
                     <a href="#">Plants <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="cat-menu">
-                        <li><a href="#">For Kids</a></li>
-                        <li><a href="#">For Parents</a></li>
-                        <li><a href="#">Birthday Cakes</a></li>
+                        <li><a href="#">Bouquet Customize</a></li>
+                        <li><a href="#">Home Plants</a></li>
+                        <li><a href="#">Indoor Planters</a></li>
+                        <li><a href="#">Rare Planters</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
-    <!-- -------------------Hero-section-------->
-    <section class="hero">
 
+    <!-- ---- Hero Section ---- -->
+    <section class="hero" id="hero">
         <div class="container">
-            <h1>Fresh Flowers</h1>
-            <h2>Natual & Beautiful Flowers </h2>
-            <p>Discover Hand-Picked Flower For Every Speciaal Moment</p>
-
+            <div class="hero-eyebrow">🌹 New arrivals every week</div>
+            <h1>Fresh<br><em>Flowers</em></h1>
+            <h2>Natural &amp; Beautiful Blooms</h2>
+            <p>Discover hand-picked flowers for every special moment — delivered fresh to your door.</p>
             <div class="btn-hero">
-                <button class="ripple-btn"><a href="#">Shop Now</a></button>
+                <button class="ripple-btn" id="shop-now-btn">
+                    <a href="product.html"><i class="fa-solid fa-leaf"></i> &nbsp;Shop Now</a>
+                </button>
+                <button class="btn-ghost" id="explore-btn">
+                    <a href="about.html">Our Story →</a>
                 </button>
             </div>
         </div>
     </section>
-    <!-- -------------------Banner-2------------>
-    <section class="hero-banner">
 
+    <!-- ---- Promo Banners ---- -->
+    <section class="hero-banner" aria-label="Promotional banners">
         <div class="banner-grid">
             <div class="banner-card">
-                <img src="/image/index/02_banner/Promise_Day_Desk.jpg" alt="">
+                <img src="/image/index/02_banner/Promise_Day_Desk.jpg" alt="Promise Day Special Collection">
             </div>
         </div>
-
         <div class="banner-grid">
             <div class="banner-card">
-                <img src="/image/index/02_banner/valentines-day-desk-02-02-2026.webp" alt="">
+                <img src="/image/index/02_banner/valentines-day-desk-02-02-2026.webp" alt="Valentine's Day Collection">
             </div>
         </div>
     </section>
 
-    <!-- -------------------Row-1-------------->
-
-    <section class="flower-picker">
-        <h2 class="section-title-1">Pick Their Fav Flowers</h2>
-
+    <!-- ---- Pick a Flower ---- -->
+    <section class="flower-picker" id="flower-picker">
+        <div class="section-header">
+            <span class="section-eyebrow">Our Collection</span>
+            <h2 class="section-title-1">Pick Their Fav Flowers</h2>
+        </div>
         <div class="flower-grid">
-            <div class="flower-card">
+            <div class="flower-card" id="flower-roses">
                 <div class="image-container">
                     <img src="/image/index/row-1/roses-30-01-2026.png" alt="Roses">
                 </div>
                 <p class="flower-name">Roses</p>
             </div>
-
-            <div class="flower-card">
+            <div class="flower-card" id="flower-carnations">
                 <div class="image-container">
                     <img src="/image/index/row-1/carnations-30-01-2026.png" alt="Carnations">
                 </div>
                 <p class="flower-name">Carnations</p>
             </div>
-
-            <div class="flower-card">
+            <div class="flower-card" id="flower-orchids">
                 <div class="image-container">
                     <img src="/image/index/row-1/orchids_latest.png" alt="Orchids">
                 </div>
                 <p class="flower-name">Orchids</p>
             </div>
-
-            <div class="flower-card">
+            <div class="flower-card" id="flower-sunflowers">
                 <div class="image-container">
                     <img src="/image/index/row-1/sunflowers-30-01-2026.png" alt="Sunflowers">
                 </div>
                 <p class="flower-name">Sunflowers</p>
             </div>
-
-            <div class="flower-card">
+            <div class="flower-card" id="flower-gerberas">
                 <div class="image-container">
                     <img src="/image/index/row-1/gerberas-30-01-2026.png" alt="Gerberas">
                 </div>
                 <p class="flower-name">Gerberas</p>
             </div>
-
-            <div class="flower-card">
+            <div class="flower-card" id="flower-luxe">
                 <div class="image-container">
-                    <img src="/image/index/row-1/Flowers_Luxe_Desk_170125.webp" alt="Luxe">
+                    <img src="/image/index/row-1/Flowers_Luxe_Desk_170125.webp" alt="Luxe Collection">
                 </div>
                 <p class="flower-name">Luxe</p>
             </div>
-
         </div>
-
     </section>
-    <!-- -------------------Row-2-------------->
 
-    <section class="flower-picker">
-        <h2 class="section-title-2">Birthday Gifts that Wow</h2>
-
+    <!-- ---- Birthday Gifts ---- -->
+    <section class="flower-picker" id="birthday-gifts">
+        <div class="section-header">
+            <span class="section-eyebrow">Celebrations</span>
+            <h2 class="section-title-2">Birthday Gifts that Wow</h2>
+        </div>
         <div class="flower-grid">
-            <div class="flower-card">
+            <div class="flower-card" id="gift-flowers">
                 <div class="image-container">
-                    <img src="/image/index/row-2/flowers.jpg" alt="Roses">
+                    <img src="/image/index/row-2/flowers.jpg" alt="Flowers">
                 </div>
                 <p class="flower-name">Flowers</p>
             </div>
-
-            <div class="flower-card">
+            <div class="flower-card" id="gift-balloons">
                 <div class="image-container">
-                    <img src="/image/index/row-2/Balloons.jpg" alt="Carnations">
+                    <img src="/image/index/row-2/Balloons.jpg" alt="Balloons">
                 </div>
                 <p class="flower-name">Balloons</p>
             </div>
-
-            <div class="flower-card">
+            <div class="flower-card" id="gift-hampers">
                 <div class="image-container">
-                    <img src="/image/index/row-2/Birthday-Hampers.jpg" alt="Orchids">
+                    <img src="/image/index/row-2/Birthday-Hampers.jpg" alt="Birthday Hampers">
                 </div>
-                <p class="flower-name">Birthday-Hampers</p>
+                <p class="flower-name">Birthday Hampers</p>
             </div>
-
-            <div class="flower-card">
+            <div class="flower-card" id="gift-plants">
                 <div class="image-container">
-                    <img src="/image/index/row-2/Birthday-Plants.jpg" alt="Sunflowers">
+                    <img src="/image/index/row-2/Birthday-Plants.jpg" alt="Birthday Plants">
                 </div>
-                <p class="flower-name">Birthday-Plants</p>
+                <p class="flower-name">Birthday Plants</p>
             </div>
-
-            <div class="flower-card">
+            <div class="flower-card" id="gift-cakes">
                 <div class="image-container">
-                    <img src="/image/index/row-2/cakes.jpg" alt="Gerberas">
+                    <img src="/image/index/row-2/cakes.jpg" alt="Cakes">
                 </div>
                 <p class="flower-name">Cakes</p>
             </div>
-
-            <div class="flower-card">
+            <div class="flower-card" id="gift-personalised">
                 <div class="image-container">
-                    <img src="/image/index/row-2/personalized.webp" alt="Luxe">
+                    <img src="/image/index/row-2/personalized.webp" alt="Personalised Gifts">
                 </div>
-                <p class="flower-name">Personalide-Gifts</p>
+                <p class="flower-name">Personalised Gifts</p>
             </div>
-
         </div>
-
     </section>
-    <!-- ---------------footer------------------ -->
+
+    <!-- ---- Footer ---- -->
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section about">
-                <h3>YourLogo</h3>
-                <p>Brief description of your company or website. Make it catchy and relevant.</p>
+                <h3>Bloom 🌸</h3>
+                <p>Bringing nature's beauty to your doorstep. Curated fresh flowers and heartfelt gifts for every occasion since 2025.</p>
             </div>
-
             <div class="footer-section links">
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="product.html">Product</a></li>
+                    <li><a href="product.html">Products</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-
             <div class="footer-section contact">
                 <h3>Contact Us</h3>
-                <p>Email: info@example.com</p>
-                <p>Phone: +1 123 456 7890</p>
+                <p>Email: hello@bloom.in</p>
+                <p>Phone: +91 98000 00000</p>
             </div>
         </div>
-
         <div class="footer-bottom">
-            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+            <p>&copy; 2025 Bloom. All rights reserved.</p>
             <ul class="policy-links">
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Service</a></li>
@@ -283,6 +266,7 @@
         </div>
     </footer>
 
+    <script src="/js/bloom-cart.js"></script>
 </body>
 
 </html>

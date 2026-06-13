@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Bloom shopping cart — review and checkout your flower orders.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Cart — Bloom</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <div class="logo"><a href="index.html">Bloom 🌸</a></div>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <a href="#" id="wishlist-icon" aria-label="Wishlist"><i class="fa-solid fa-heart"></i></a>
+                <a href="sign-in.html" id="user-icon" aria-label="Account"><i class="fa-solid fa-user"></i></a>
+                <a href="cart.html" id="cart-icon" aria-label="Cart" class="active-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count" id="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+        <h1>Your Cart 🛒</h1>
+        <p>Review your selected blooms before checkout.</p>
+    </div>
+
+    <!-- CART MAIN -->
+    <main class="cart-main" id="cart-main">
+        <!-- Cart items will be populated by JS -->
+        <div class="cart-layout" id="cart-layout">
+            <!-- LEFT: Items -->
+            <section class="cart-items-section">
+                <div class="cart-items-header">
+                    <h2>Cart Items</h2>
+                    <button class="clear-cart-btn" id="clear-cart-btn">
+                        <i class="fa-solid fa-trash"></i> Clear All
+                    </button>
+                </div>
+                <div id="cart-items-list">
+                    <!-- Dynamically rendered -->
+                </div>
+            </section>
+
+            <!-- RIGHT: Order Summary -->
+            <aside class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="summary-subtotal">₹0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span class="free-tag">FREE</span>
+                </div>
+                <div class="summary-row discount-row" id="discount-row" style="display:none">
+                    <span>Discount</span>
+                    <span id="summary-discount" class="discount-val">-₹0</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-row total-row">
+                    <span>Total</span>
+                    <span id="summary-total">₹0</span>
+                </div>
+
+                <div class="promo-group">
+                    <input type="text" id="promo-input" placeholder="Enter promo code">
+                    <button class="promo-btn" id="apply-promo-btn">Apply</button>
+                </div>
+                <p class="promo-msg" id="promo-msg"></p>
+
+                <a href="product.html" class="checkout-btn" id="checkout-btn">
+                    <i class="fa-solid fa-lock"></i> Proceed to Checkout
+                </a>
+                <a href="product.html" class="continue-shopping-link">
+                    ← Continue Shopping
+                </a>
+            </aside>
+        </div>
+
+        <!-- EMPTY STATE -->
+        <div class="empty-cart" id="empty-cart" style="display:none">
+            <div class="empty-icon">🛒</div>
+            <h2>Your cart is empty</h2>
+            <p>Looks like you haven't added any flowers yet.</p>
+            <a href="product.html" class="btn-shop-now">
+                <i class="fa-solid fa-leaf"></i> Shop Now
+            </a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Bloom 🌸</h3>
+                <p>Bringing nature's beauty to your doorstep. Curated fresh flowers for every occasion since 2025.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: hello@bloom.in</p>
+                <p>Phone: +91 98000 00000</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bloom. All rights reserved.</p>
+            <ul class="policy-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Cookie Settings</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/js/cart.js"></script>
+</body>
+
+</html>

@@ -4,47 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Sign in to your Bloom account to track orders and access your wishlist.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Sign In — Bloom</title>
     <link rel="stylesheet" href="/css/sign-in.css">
 </head>
 
 <body>
-    <!-- -------------------section-content-------------- -->
     <section>
-
         <div class="signin-container">
+            <!-- Illustration / Brand Side -->
             <div class="illustration-side">
-                <img src="/image/contact/contact.png" alt="">
+                <img src="/image/contact/contact.png" alt="Bloom flowers illustration">
             </div>
 
+            <!-- Form Side -->
             <div class="form-side">
-                <h2>Sign In</h2>
-                <p class="subtitle">Unlock you world.</p>
+                <h2>Welcome Back 🌸</h2>
+                <p class="subtitle">Sign in to your Bloom account.</p>
 
-                <form>
+                <form id="signin-form">
                     <div class="input-group">
-                        <label><span class="required">*</span> Email</label>
-                        <input type="email" placeholder="Enter your email">
+                        <label for="signin-email"><span class="required">*</span> Email</label>
+                        <input type="email" id="signin-email" placeholder="Enter your email" autocomplete="email">
                     </div>
 
                     <div class="input-group">
-                        <label><span class="required">*</span> Password</label>
+                        <label for="signin-password"><span class="required">*</span> Password</label>
                         <div class="password-wrapper">
-                            <input type="password" placeholder="Enter your password">
-                            <span class="toggle-password">👁️</span>
+                            <input type="password" id="signin-password" placeholder="Enter your password" autocomplete="current-password">
+                            <span class="toggle-password" id="toggle-pw" aria-label="Toggle password visibility">👁️</span>
                         </div>
+                        <a href="reset.html" style="font-size:12px;color:#e84393;margin-top:6px;display:inline-block;">Forgot password?</a>
                     </div>
 
-                    <button type="submit" class="btn-signin"><a href="index.html">Sign In</a></button>
-                    <button type="button" class="btn-create"><a href="create-an-account.html">Create an
-                            account</a></button>
+                    <button type="submit" class="btn-signin" id="btn-signin">
+                        <a href="index.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp;Sign In</a>
+                    </button>
+                    <button type="button" class="btn-create" id="btn-create">
+                        <a href="sign-up.html"><i class="fa-solid fa-user-plus"></i> &nbsp;Create an account</a>
+                    </button>
                 </form>
             </div>
         </div>
     </section>
+
+    <script>
+        // Toggle password visibility
+        document.getElementById('toggle-pw').addEventListener('click', function () {
+            const pw = document.getElementById('signin-password');
+            pw.type = pw.type === 'password' ? 'text' : 'password';
+        });
+    </script>
 </body>
 
 </html>
